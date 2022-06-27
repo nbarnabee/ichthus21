@@ -1,0 +1,144 @@
+/* Root variables  */
+
+:root {
+  /* See Palette 9 in Refactoring UI */
+  --primary-main: hsl(199, 84%, 55%);
+  --primary-lightest: hsl(195, 100%, 95%);
+  --primary-light: hsl(195, 97%, 75%);
+  --primary-dark: hsl(201, 79%, 46%);
+  --primary-darkest: hsl(203, 87%, 34%);
+
+  --neutral-main: hsl(211, 10%, 53%);
+  --neutral-lightest: hsl(216, 33%, 97%);
+  --neutral-light: hsl(210, 16%, 82%);
+  --neutral-dark: hsl(209, 14%, 37%);
+  --neutral-darkest: hsl(210, 24%, 16%);
+
+  --ff-header: "Raleway", Verdana, Geneva, Tahoma, sans-serif;
+  --ff-body: "Open Sans", Verdana, Geneva, Tahoma, sans-serif;
+
+  --fs-h1: 3rem;
+  --fs-h2: 2rem;
+  --fs-h3: 1.25rem;
+  --fs-h4: 0.75rem;
+  --fs-body: 1rem;
+
+  --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 25%),
+    0.125em 0.125em 0.25em rgba(0, 0, 0, 15%);
+}
+
+@media (min-width: 800px) {
+  :root {
+    --fs-h1: 4.5rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  :root {
+    --fs-h2: 3rem;
+    --fs-h3: 1.5rem;
+    --fs-h4: 1rem;
+    --fs-body: 1.125rem;
+  }
+}
+
+/* -- General typography -- */
+
+h1,
+h2,
+h3 {
+  line-height: 1;
+  font-family: var(--ff-header);
+}
+
+h1 {
+  font-size: var(--fs-h1);
+  font-weight: 900;
+}
+
+h2 {
+  font-size: var(--fs-h2);
+}
+
+h3 {
+  font-size: var(--fs-h3);
+}
+
+body {
+  font-weight: 500;
+}
+
+/* -- General styles -- */
+
+body {
+  background: var(--neutral-lightest);
+  color: var(--neutral-darkest);
+  font-family: var(--ff-body);
+  font-size: var(--fs-body);
+}
+
+:focus {
+  outline: 3px solid var(--neutral-dark);
+  outline-offset: 3px;
+}
+
+p {
+  max-width: 70ch;
+}
+
+/* -- General component styling -- */
+
+.btn,
+button {
+  border: 0;
+  display: inline-block;
+  height: 3em;
+  line-height: 3em;
+  padding: 0 1.5em;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  text-transform: uppercase;
+  border-radius: 2px;
+}
+
+/*  -- Hero specific styles -- */
+
+.hero {
+  color: white;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.3) 59%,
+      rgba(0, 0, 0, 0.75) 100%
+    ),
+    url("./assets/images/header_full.JPG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+  padding-bottom: 2.5em;
+}
+
+.hero p {
+  font-size: var(--fs-h3);
+  padding-inline: 15px;
+}
+
+.hero-btn {
+  color: inherit;
+  text-decoration: none;
+  background: var(--primary-main);
+  margin-inline: 0.5em;
+}
+
+hr {
+  width: 50%;
+  color: white;
+}
