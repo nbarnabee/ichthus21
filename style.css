@@ -10,6 +10,7 @@
 
   --neutral-main: hsl(211, 10%, 53%);
   --neutral-lightest: hsl(216, 33%, 97%);
+  --neutral-lighter: hsl(214, 15%, 91%);
   --neutral-light: hsl(210, 16%, 82%);
   --neutral-dark: hsl(209, 14%, 37%);
   --neutral-darkest: hsl(210, 24%, 16%);
@@ -141,4 +142,74 @@ button {
 hr {
   width: 50%;
   color: white;
+}
+
+/* --- Subsection tile styling --- */
+
+.services {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 4rem 2rem;
+}
+
+.service {
+  background-color: var(--neutral-lightest);
+  max-width: 50ch;
+  padding: 0.5em;
+  padding-top: 1em;
+}
+
+.service h3 {
+  margin-block: 1em;
+  text-decoration: underline;
+}
+
+.service img {
+  margin-inline: auto;
+  height: 48px;
+  fill: var(--primary-dark);
+}
+
+@media (min-width: 800px) {
+  .services {
+    flex-direction: row;
+  }
+
+  .service img {
+    height: 56px;
+  }
+}
+
+/* ----- Philosophy --- */
+
+.philosophy {
+  color: white;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.4) 0%,
+      rgba(0, 0, 0, 0.6) 59%,
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    url("./assets/images/hands_touching.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.philosophy div {
+  padding: 3rem 2rem;
+}
+
+.philosophy h2 {
+  margin-bottom: 0.75em;
+}
+
+@media (min-width: 800px) {
+  .philosophy div {
+    padding: 5rem 2rem;
+  }
 }
