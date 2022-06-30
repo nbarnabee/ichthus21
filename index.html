@@ -4,14 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Raleway:ital,wght@0,300;0,400;0,600;0,700;0, 900;1,300&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="./normalize.css" />
     <link rel="stylesheet" href="./style.css" />
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
+
 
     <title>Ichthus21</title>
   </head>
@@ -21,7 +20,7 @@
     </header>
     <main>
       <section class="hero" aria-labelledby="ichthus21">
-        <h1 id="ichthus21">Ichthus21</h1>
+        <h1 id="ichthus21" class="heading-light">Ichthus21</h1>
         <hr />
         <p>
           Conciliation and reconciliation studies. Building bridges between
@@ -66,7 +65,7 @@
       </section>
       <section class="philosophy" aria-labelledby="philosophy">
         <div id="philosophy">
-          <h2>Reconciliation</h2>
+          <h2 class="heading-light">Reconciliation</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto
             neque fuga, aut expedita repudiandae enim id recusandae atque
@@ -92,7 +91,7 @@
             class="about_image"
           />
           <div class="about_text" id="about">
-            <h2>Raymond Pfister</h2>
+            <h2 class="heading-reduced">Raymond Pfister</h2>
             <ul>
               <li>Doctorate of Theology (University of Strasbourg)</li>
               <li>
@@ -112,37 +111,42 @@
         </div>
       </section>
       <section class="testimonials">
-        <div class="slide-container">
-          <div class="slide">
-            <img src="/assets/images/pfisterr-2015-04.jpg" alt="" />
-            <small>John Doe</small>
-            <q>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere
-              delectus sapiente, nihil a corrupti quis.
-            </q>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="/assets/images/pfisterr-2015-04.jpg" alt="" />
+              <small>John Doe</small>
+              <q>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere
+                delectus sapiente, nihil a corrupti quis.
+              </q>
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/pfisterr-2015-04.jpg" alt="" />
+              <small>John Doe</small>
+              <q>
+                Aliquam ratione error repudiandae perspiciatis optio animi iste
+                impedit sapiente commodi, vel sint hic veniam soluta, voluptas,
+                sed nemo repellendus amet! Temporibus quibusdam a atque.
+              </q>
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/pfisterr-2015-04.jpg" alt="" />
+              <small>John Doe</small>
+              <q>
+                Ducimus numquam hic autem esse cumque voluptatibus sequi!
+                Blanditiis illo aperiam magnam nihil asperiores quam a, dolorem
+                repellendus praesentium ipsum.
+              </q>
           </div>
-          <div class="slide">
-            <img src="/assets/images/pfisterr-2015-04.jpg" alt="" />
-            <small>John Doe</small>
-            <q>
-              Aliquam ratione error repudiandae perspiciatis optio animi iste
-              impedit sapiente commodi, vel sint hic veniam soluta, voluptas,
-              sed nemo repellendus amet! Temporibus quibusdam a atque.
-            </q>
           </div>
-          <div class="slide">
-            <img src="/assets/images/pfisterr-2015-04.jpg" alt="" />
-            <small>John Doe</small>
-            <q>
-              Ducimus numquam hic autem esse cumque voluptatibus sequi!
-              Blanditiis illo aperiam magnam nihil asperiores quam a, dolorem
-              repellendus praesentium ipsum.
-            </q>
-          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
       </section>
       <section class="contact" id="contact">
-        <h2 class="section__title section__title--contact">Contact</h2>
+        <h2 class="section__title section__title--contact heading-reduced">Contact</h2>
         <p class="section__subtitle--contact"></p>
         <div class="contact__text">
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid obcaecati molestias exercitationem, aut
@@ -168,5 +172,16 @@
     </main>
 
     <script src="./main.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>var swiper = new Swiper(".mySwiper", {
+      pagination: {
+    el: '.swiper-pagination',
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+    });</script>
   </body>
 </html>

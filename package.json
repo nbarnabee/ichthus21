@@ -1,0 +1,19 @@
+{
+  "name": "ichthus21",
+  "version": "1.0.0",
+  "description": "Project files for Raymond's website",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nbarnabee/ichthus21.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nbarnabee/ichthus21/issues"
+  },
+  "homepage": "https://github.com/nbarnabee/ichthus21#readme"
+}

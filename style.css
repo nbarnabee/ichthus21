@@ -1,3 +1,63 @@
+/* Fonts */
+
+/* raleway-600 - latin */
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  src: url("./assets/fonts/raleway-v27-latin-600.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("./assets/fonts/raleway-v27-latin-600.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("./assets/fonts/raleway-v27-latin-600.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */ url("./assets/fonts/raleway-v27-latin-600.woff")
+      format("woff"),
+    /* Modern Browsers */ url("./assets/fonts/raleway-v27-latin-600.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("./assets/fonts/raleway-v27-latin-600.svg#Raleway") format("svg"); /* Legacy iOS */
+}
+
+/* raleway-700 - latin */
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./assets/fonts/raleway-v27-latin-700.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("./assets/fonts/raleway-v27-latin-700.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("./assets/fonts/raleway-v27-latin-700.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */ url("./assets/fonts/raleway-v27-latin-700.woff")
+      format("woff"),
+    /* Modern Browsers */ url("./assets/fonts/raleway-v27-latin-700.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("./assets/fonts/raleway-v27-latin-700.svg#Raleway") format("svg"); /* Legacy iOS */
+}
+
+/* open-sans-regular - latin */
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./assets/fonts/open-sans-v29-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("./assets/fonts/open-sans-v29-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("./assets/fonts/open-sans-v29-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("./assets/fonts/open-sans-v29-latin-regular.woff") format("woff"),
+    /* Modern Browsers */ url("./assets/fonts/open-sans-v29-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("./assets/fonts/open-sans-v29-latin-regular.svg#OpenSans")
+      format("svg"); /* Legacy iOS */
+}
+
 /* Root variables  */
 
 :root {
@@ -50,11 +110,13 @@ h2,
 h3 {
   line-height: 1;
   font-family: var(--ff-header);
+  font-weight: 600;
+  color: var(--neutral-darkest);
 }
 
 h1 {
   font-size: var(--fs-h1);
-  font-weight: 900;
+  font-weight: 700;
 }
 
 h2 {
@@ -66,14 +128,22 @@ h3 {
 }
 
 body {
-  font-weight: 500;
+  font-weight: 400;
+}
+
+.heading-light {
+  color: white;
+}
+
+.heading-reduced {
+  font-size: var(--fs-h3);
 }
 
 /* -- General styles -- */
 
 body {
-  background: var(--neutral-lightest);
-  color: var(--neutral-darkest);
+  background-color: var(--primary-lightest);
+  color: var(--neutral-main);
   font-family: var(--ff-body);
   font-size: var(--fs-body);
 }
@@ -170,11 +240,11 @@ hr {
   max-width: 50ch;
   padding: 0.5em;
   padding-top: 1em;
+  box-shadow: var(--bs);
 }
 
 .service h3 {
   margin-block: 1em;
-  text-decoration: underline;
 }
 
 .service img {
@@ -274,21 +344,38 @@ hr {
   }
 }
 
-/* --------- Testimonials ---- */
+/* --------- Testimonials/Swiper ---- */
 
-.slide {
+.swiper {
+  height: 300px;
+}
+
+.swiper-slide {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   background-color: white;
 }
 
-.slide p {
+.swiper-slide q {
   margin-top: 0.25em;
+  color: var(--neutral-darkest);
 }
 
-.slide > img {
+.swiper-slide > img {
   height: 100px;
+}
+
+.swiper-button-next,
+.swiper-button-prev,
+.swiper-pagination {
+  color: var(--primary-main) !important;
+}
+
+.swiper-button-next:focus,
+.swiper-button-prev:focus {
+  outline: 2px solid var(--primary-light) !important;
 }
 
 /* ------- Contact ------- */
