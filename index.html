@@ -5,11 +5,14 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Lato:wght@700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/normalize.css" />
   <link rel="stylesheet" href="./assets/css/style.css" />
-  rel="stylesheet"
-  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
-  />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 
 
   <title>Ichthus21</title>
@@ -21,100 +24,104 @@
   </header>
   <main>
     <section class="hero" aria-labelledby="ichthus21">
-      <h1 id="ichthus21" class="heading-light">Ichthus 21</h1>
-      <hr />
-      <p>
-        Conciliation and reconciliation studies. Building bridges between
-        individuals and communities. Forging new relationships and repairing
-        old ones.
-      </p>
+      <h1 id="ichthus21" class="heading-light text-shadow">Ichthus 21</h1>
+      <!-- <p>European Institute for Reconciliation Studies</p> -->
+      <div>
+        <p>Building bridges between individuals and communities.</p>
+        <p class="hidden-small-screen">Forging new relationships and repairing old ones.</p>
+      </div>
       <div class="hero-buttons">
-        <a href="#philosophy" class="btn hero-btn">Learn More</a>
+        <a href="#philosophy" class="btn hero-btn">Our Mission</a>
         <a href="" class="btn hero-btn">Contact</a>
       </div>
     </section>
 
     <!-- Services -->
     <section class="services">
-      <div class="service">
+      <div class="service stack-small">
         <img src="./assets/icons/book-bible-solid.svg" alt="" />
         <h3>Teachings of Jesus</h3>
         <p>
-          A series of courses examining the Biblical and theological
-          foundations of Christian thought, as revealed in the teachings of
+          Examining the Biblical and theological
+          foundations of Christian thought as revealed in the teachings of
           Jesus.
         </p>
-        <a href="" class="btn">Read more</a>
+        <a href="" class="btn btn-outline">Read more</a>
       </div>
-      <div class="service">
+      <div class="service stack-small">
         <img src="./assets/icons/church-solid.svg" alt="" />
         <h3>Unity Within Diversity</h3>
         <p>
           Seminars on unity and fellowship within the Christian community and
-          the wider European community. Facilitating the development of
-          partnerships between Churches.
+          the wider European community.
         </p>
-        <a href="" class="btn">Read more</a>
+        <a href="" class="btn btn-outline">Read more</a>
       </div>
-      <div class="service">
+      <div class="service stack-small">
         <img src="./assets/icons/handshake-simple-solid.svg" alt="" />
         <h3>Guidance and Counselling</h3>
         <p>
           One-on-one counselling and personal guidance. Institutional
           consultation and leadership coaching.
         </p>
-        <a href="" class="btn">Read more</a>
-      </div>
-    </section>
-
-    <!-- About -->
-    <section class="about" aria-labelledby="about">
-      <div class="about_container">
-        <img src="./assets/images/pfisterr-2015-04.jpg" alt="An image of Raymond Pfister" class="about_image" />
-        <div class="about_text" id="about">
-          <h2 class="heading-reduced">Raymond Pfister</h2>
-          <ul>
-            <li>Doctorate of Theology (University of Strasbourg)</li>
-            <li>
-              Former director of the NEED A PROPER NAME HERE center in Hamburg.
-            </li>
-            <li>
-              Former director of the NEED A PROPER NAME HERE School of Theology
-              in Birmingham.
-            </li>
-            <li>More than 30 years' experience in pastoral accompaniment.</li>
-            <li>
-              C2 level proficiency in the French, German and English languages;
-              B1 (spoken) Italian.
-            </li>
-          </ul>
-        </div>
+        <a href="" class="btn btn-outline">Read more</a>
       </div>
     </section>
 
     <!-- Overview/philosophy -->
     <section class="philosophy" aria-labelledby="philosophy">
-      <div id="philosophy">
-        <h2 class="heading-light">Reconciliation</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto
-          neque fuga, aut expedita repudiandae enim id recusandae atque
-          officia voluptatibus, reiciendis exercitationem asperiores ipsa
-          deserunt adipisci accusantium rerum veritatis et deleniti alias,
-          culpa corporis perspiciatis quidem in. Illo, accusamus molestiae?
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Voluptatibus quo error nobis dignissimos quis totam numquam illo
-          fuga corporis voluptate voluptas odit magni, laboriosam sequi quidem
-          adipisci quae amet officia eum doloremque labore? Vel quae minus
-          laboriosam molestiae blanditiis. Eveniet corporis veritatis unde,
-          alias perspiciatis vitae eum adipisci autem laudantium!
+      <div id="philosophy" class="container-large">
+        <h2 class="heading-light">What are Re/Conciliation studies?</h2>
+        <div class="stack text-medium">
+          <p>
+            Conciliation studies (from the Latin <i>conciliare</i>, to bring together) is a general term that refers to
+            the
+            process of bringing different parties into relationships of mutual benefit and enrichment, in order
+            to
+            live in a model of unity in diversity.</p>
+          <p>Reconciliation studies refers more specifically to the healing of broken relationships, the resolving of
+            conflicts and wrongs of the past in order to reestablish and restore relationships.</p>
+        </div>
         </p>
       </div>
     </section>
+
+    <!-- About -->
+    <section class="about" aria-labelledby="about">
+      <div class="about_container container-medium">
+        <img src="./assets/images/pfisterr-2015-04.jpg" alt="An image of Raymond Pfister" class="about_image" />
+        <div class="about_text stack">
+          <h2 class="heading-reduced" id="about">Dr. Raymond Pfister, Founder</h2>
+          <p>Originally from the Alsace region of France, Dr. Pfister has studied both in Europe and in the the United
+            States. He holds an MA in Biblical Languages and an MDiv with a concentration in Christian Education. He
+            received
+            his PhD in Theology (University of Strasbourg, France) for his socio-historical research on the Pentecostal
+            Movement in Alsace.</p>
+          <p>His wide experience across Europe includes the directorship of a Salvation Army centre, pastorates in the
+            Pentecostal-Charismatic tradition in France and Germany, and
+            positions at theological schools in Brussels (Belgium), Hamburg (Germany), and Birmingham (UK).</p>
+          <!-- Consider moving the below to another page, perhaps one with a full CV -->
+          <!-- <ul>
+                <li>Doctorate of Theology (University of Strasbourg)</li>
+                <li>
+                  Former director of the NEED A PROPER NAME HERE center in Hamburg.
+                </li>
+                <li>
+                  Former director of the NEED A PROPER NAME HERE School of Theology
+                  in Birmingham.
+                </li>
+                <li>More than 30 years' experience in pastoral accompaniment.</li>
+                <li>
+                  C2 level proficiency in the French, German and English languages;
+                  B1 (spoken) Italian.
+                </li>
+              </ul> -->
+        </div>
+      </div>
+    </section>
+
     <!-- Testimonials -->
-    <section class="testimonials">
+    <!-- <section class="testimonials">
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -148,18 +155,13 @@
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Contact -->
-    <section class="contact" id="contact">
+    <section class="contact container-large" id="contact">
       <h2 class="section__title section__title--contact heading-reduced">Contact</h2>
       <p class="section__subtitle--contact"></p>
       <div class="contact__text">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid obcaecati molestias exercitationem, aut
-          deleniti impedit eos veritatis iure ea ullam.</p>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus aperiam necessitatibus quas maxime beatae est
-          eos
-          non voluptates error quaerat ipsum iste, labore autem aliquid modi. Sit blanditiis aliquam ipsa?</p>
       </div>
 
 
@@ -178,7 +180,7 @@
   </main>
 
   <script src="./assets/main.js"></script>
-  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <!-- <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script>var swiper = new Swiper(".mySwiper", {
       pagination: {
         el: '.swiper-pagination',
@@ -188,7 +190,7 @@
         prevEl: '.swiper-button-prev',
       },
 
-    });</script>
+    });</script> -->
 </body>
 
 </html>
