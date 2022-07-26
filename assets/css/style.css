@@ -162,8 +162,14 @@ small {
   font-size: var(--fs-h4);
 }
 
-main > section {
-  padding: 2rem 3rem;
+main > section:not(.about) {
+  padding: 1rem 0.5rem;
+}
+
+@media (min-width: 800px) {
+  main > section:not(.about) {
+    padding: 2rem 3rem;
+  }
 }
 
 /* -- General component styling -- */
@@ -233,14 +239,16 @@ hr {
   justify-content: center;
   gap: 1.5rem;
   margin: 4rem 2rem;
+  margin-bottom: 1rem;
 }
 
 .service {
-  background-color: var(--neutral-lightest);
+  background-color: white;
   max-width: 50ch;
   padding: 0.5em;
   padding-top: 1em;
   box-shadow: var(--bs);
+  border-radius: 20px;
 }
 
 .service h3 {
@@ -257,10 +265,64 @@ hr {
   .services {
     flex-direction: row;
     align-items: flex-start;
+    margin-bottom: 1rem;
   }
 
   .service img {
     height: 56px;
+  }
+}
+
+/* ---- About ----- */
+
+.about {
+  background-color: var(--primary-lightest);
+  padding-inline: 3rem;
+  padding-bottom: 2rem;
+}
+
+.about_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1.5rem;
+  border-radius: 20px;
+  box-shadow: var(--bs);
+}
+
+.about * {
+  background-color: white;
+}
+
+.about_image {
+  height: 250px;
+}
+
+.about_text {
+  max-width: 70ch;
+}
+
+.about_text h2 {
+  text-align: center;
+  margin-bottom: 0.25em;
+  position: relative;
+  padding-block: 10px;
+}
+
+@media (min-width: 800px) {
+  .about {
+    padding-inline: 7rem;
+    padding-bottom: 5rem;
+  }
+
+  .about_container {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .about_image {
+    height: 300px;
   }
 }
 
@@ -291,56 +353,6 @@ hr {
 @media (min-width: 800px) {
   .philosophy div {
     padding: 5rem;
-  }
-}
-
-/* ---- About ----- */
-
-.about {
-  background-color: var(--primary-lightest);
-  padding: 2rem 3rem;
-}
-
-.about_container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 1.5rem;
-  border-radius: 20px;
-}
-
-.about * {
-  background-color: white;
-}
-
-.about_image {
-  height: 250px;
-}
-
-.about_text {
-  max-width: 70ch;
-}
-
-.about_text h2 {
-  text-align: center;
-  margin-bottom: 0.25em;
-  position: relative;
-  padding-block: 10px;
-}
-
-@media (min-width: 800px) {
-  .about {
-    padding: 5rem 7rem;
-  }
-
-  .about_container {
-    flex-direction: row;
-    gap: 2rem;
-  }
-
-  .about_image {
-    height: 300px;
   }
 }
 
