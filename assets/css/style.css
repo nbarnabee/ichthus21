@@ -1,58 +1,5 @@
 /* Fonts */
 
-/* raleway-600 - latin */
-@font-face {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 600;
-  src: url("../fonts/raleway-v27-latin-600.eot"); /* IE9 Compat Modes */
-  src: local(""),
-    url("../fonts/raleway-v27-latin-600.eot?#iefix") format("embedded-opentype"),
-    /* IE6-IE8 */ url("../fonts/raleway-v27-latin-600.woff2") format("woff2"),
-    /* Super Modern Browsers */ url("../fonts/raleway-v27-latin-600.woff")
-      format("woff"),
-    /* Modern Browsers */ url("../fonts/raleway-v27-latin-600.ttf")
-      format("truetype"),
-    /* Safari, Android, iOS */ url("../fonts/raleway-v27-latin-600.svg#Raleway")
-      format("svg"); /* Legacy iOS */
-}
-
-/* raleway-700 - latin */
-@font-face {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/raleway-v27-latin-700.eot"); /* IE9 Compat Modes */
-  src: local(""),
-    url("../fonts/raleway-v27-latin-700.eot?#iefix") format("embedded-opentype"),
-    /* IE6-IE8 */ url("../fonts/raleway-v27-latin-700.woff2") format("woff2"),
-    /* Super Modern Browsers */ url("../fonts/raleway-v27-latin-700.woff")
-      format("woff"),
-    /* Modern Browsers */ url("../fonts/raleway-v27-latin-700.ttf")
-      format("truetype"),
-    /* Safari, Android, iOS */ url("../fonts/raleway-v27-latin-700.svg#Raleway")
-      format("svg"); /* Legacy iOS */
-}
-
-/* open-sans-regular - latin */
-@font-face {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/open-sans-v29-latin-regular.eot"); /* IE9 Compat Modes */
-  src: local(""),
-    url("../fonts/open-sans-v29-latin-regular.eot?#iefix")
-      format("embedded-opentype"),
-    /* IE6-IE8 */ url("../fonts/open-sans-v29-latin-regular.woff2")
-      format("woff2"),
-    /* Super Modern Browsers */ url("../fonts/open-sans-v29-latin-regular.woff")
-      format("woff"),
-    /* Modern Browsers */ url("../fonts/open-sans-v29-latin-regular.ttf")
-      format("truetype"),
-    /* Safari, Android, iOS */
-      url("../fonts/open-sans-v29-latin-regular.svg#OpenSans") format("svg"); /* Legacy iOS */
-}
-
 /* ----- Root variables --------- */
 
 :root {
@@ -153,7 +100,7 @@ section {
 
 @media (min-width: 800px) {
   section {
-    padding: 5rem 3rem;
+    padding-inline: 3rem;
   }
 }
 
@@ -202,12 +149,13 @@ small {
 
 /* -- General component styling -- */
 
-.btn,
-button {
+/*  Buttons and button-like objects */
+
+.btn {
   border: 0;
   display: inline-block;
   height: auto;
-  padding: 1rem 1.5rem;
+  padding: 1rem 1.25rem;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -224,8 +172,17 @@ button {
   margin-block: 0.5rem;
 }
 
-.btn:hover,
-button:hover {
+.btn-primary {
+  background: var(--primary-main);
+  color: var(--neutral-lightest);
+}
+
+.btn-dark {
+  background: var(--neutral-darkest);
+  color: var(--neutral-lightest);
+}
+
+.btn:hover {
   transform: scale(1.1);
   transition: 0.3s;
 }
@@ -276,10 +233,6 @@ button:hover {
   display: flex;
   margin-block: 1rem;
   gap: 1rem;
-}
-
-.hero-btn {
-  background: var(--primary-main);
 }
 
 @media (min-width: 800px) {
@@ -434,46 +387,41 @@ button:hover {
 /* ------- Contact ------- */
 
 .contact {
-  padding-bottom: 0;
+  max-width: 1000px;
+  margin-inline: auto;
 }
 
-.section__title--contact::after {
-  margin: 0.1em auto 0 auto;
-  height: 8px;
-  width: 100%;
-}
-
-.contact__form {
+.contact form {
   display: flex;
   flex-direction: column;
-  gap: 0.6em;
 }
 
-.contact__form input,
-.contact__form textarea {
-  width: 100%;
+.contact label {
   font-family: var(--ff-header);
+  font-size: var(--s-normal);
+  color: var(--neutral-main);
+  margin-bottom: 3px;
 }
 
-.contact .btn {
-  margin-top: 0.4em;
-  padding-inline: 1.5em;
-  background-color: var(--color-accent_light);
+.contact input {
+  height: var(--s-xl);
+}
+
+.contact input,
+textarea {
+  margin-bottom: 1rem;
+}
+
+.contact button {
   align-self: center;
+  max-width: 120px;
 }
 
-.contact .social-list {
-  margin-block: 1.5em;
-}
-
-@media (min-width: 850px) {
+/* 
+@media (min-width: 800px) {
   .contact {
     display: grid;
     grid-template-columns: 40ch 1fr;
-    grid-template-areas:
-      "title title"
-      "text form"
-      "socials form";
     grid-gap: 1em;
     max-width: 1000px;
     margin-inline: auto;
@@ -501,3 +449,4 @@ button:hover {
     margin-block: 0;
   }
 }
+ */
