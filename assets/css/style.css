@@ -38,6 +38,7 @@
     --s-xxl: 6rem;
     --s-xl: 3rem;
     --s-large: 2.25rem;
+    --s-medium-large: 1.875rem;
     --s-medium: 1.5rem;
     --s-normal: 1.125rem;
     --s-small: 1rem;
@@ -56,7 +57,7 @@
 }
 
 .stack-small > * + * {
-  margin-block-end: var(--s-small);
+  margin-block-start: var(--s-small);
 }
 
 .container-main {
@@ -129,7 +130,7 @@ h2 {
 }
 
 h3 {
-  font-size: var(--s-large);
+  font-size: var(--s-medium-large);
 }
 
 body {
