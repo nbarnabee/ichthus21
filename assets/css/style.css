@@ -229,7 +229,7 @@ ul > li + li {
       rgba(0, 0, 0, 0.3) 59%,
       rgba(0, 0, 0, 0.65) 100%
     ),
-    url("../images/patrick-robert-doyle-j6CsdJ7LIcc-unsplash.jpg");
+    url("../images/header_full.JPG");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -250,6 +250,15 @@ ul > li + li {
 }
 
 @media (min-width: 800px) {
+  .hero {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.3) 59%,
+        rgba(0, 0, 0, 0.65) 100%
+      ),
+      url("../images/patrick-robert-doyle-j6CsdJ7LIcc-unsplash.jpg");
+  }
   .hero p {
     font-size: var(--s-medium);
     max-width: 50ch;
@@ -267,9 +276,9 @@ ul > li + li {
   margin-block: var(--s-medium-large);
 }
 
-.mission {
+/* .mission {
   max-width: max(500px, 90%);
-}
+} */
 
 .about ul {
   list-style: none;
@@ -287,7 +296,7 @@ ul > li + li {
     background-repeat: no-repeat;
     background-size: cover;
     color: var(--neutral-darkest);
-    max-width: 1650px;
+    max-width: 1400px;
     margin-inline: auto;
     margin-block: var(--s-large);
   }
