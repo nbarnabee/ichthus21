@@ -59,6 +59,11 @@
   margin-block-end: var(--s-small);
 }
 
+.container-main {
+  max-width: 1800px;
+  margin-inline: auto;
+}
+
 .container-large {
   width: 90%;
   margin-inline: auto;
@@ -75,7 +80,7 @@
 /* -- General styles -- */
 
 body {
-  background-color: var(--primary-lightest);
+  background-color: var(--neutral-lightest);
   color: var(--neutral-dark);
   font-family: var(--ff-body);
   font-size: var(--s-normal);
@@ -123,7 +128,10 @@ h2 {
   font-size: var(--s-xl);
 }
 
-h3,
+h3 {
+  font-size: var(--s-medium-large);
+}
+
 body {
   font-size: var(--s-medium);
 }
@@ -150,6 +158,10 @@ small {
   text-decoration: underline;
 }
 
+ul > li + li {
+  margin-top: var(--s-small);
+}
+
 /*  Buttons and button-like objects */
 
 .btn {
@@ -174,7 +186,7 @@ small {
 }
 
 .btn-primary {
-  background: var(--primary-main);
+  background: var(--neutral-dark);
   color: var(--neutral-lightest);
 }
 
@@ -206,7 +218,7 @@ small {
   }
 }
 
-/*  -- Hero specific styles -- */
+/*  -- Hero section -- */
 
 .hero {
   color: white;
@@ -243,7 +255,82 @@ small {
   }
 }
 
-/* --- Subsection tile styling --- */
+/* -- About section -- */
+
+.about > div:first-of-type {
+  margin-inline: auto;
+}
+
+.about .btn-group {
+  justify-content: center;
+  margin-block: var(--s-medium-large);
+}
+
+.mission {
+  max-width: max(500px, 90%);
+}
+
+.about ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.mission > h3 {
+  text-align: center;
+}
+
+@media (min-width: 1000px) {
+  .about {
+    background-image: url("../images/sixteen-miles-out-bIwFwR2fSsA-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--neutral-darkest);
+    max-width: 1650px;
+    margin-inline: auto;
+    margin-block: var(--s-medium);
+  }
+
+  .mission {
+    max-width: 580px;
+  }
+
+  .mission > h3 {
+    text-align: left;
+  }
+}
+
+/* ----- Philosophy --- */
+
+.conciliation {
+  color: white;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.4) 0%,
+      rgba(0, 0, 0, 0.6) 59%,
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    url("../images/hands_touching.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.conciliation h3 {
+  font-size: var(--s-large);
+  margin-bottom: var(--s-medium);
+}
+
+#conciliation {
+  padding: 2rem 2rem;
+}
+
+@media (min-width: 800px) {
+  #conciliation {
+    padding: 3rem;
+  }
+}
+
+/* --- Services section --- */
 
 .services {
   background-color: white;
@@ -316,37 +403,6 @@ small {
 
   .raymond_image {
     height: 300px;
-  }
-}
-
-/* ----- Philosophy --- */
-
-.conciliation {
-  color: white;
-  background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.4) 0%,
-      rgba(0, 0, 0, 0.6) 59%,
-      rgba(0, 0, 0, 0.8) 100%
-    ),
-    url("../images/hands_touching.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.conciliation h3 {
-  font-size: var(--s-medium-large);
-  margin-bottom: var(--s-small);
-}
-
-#conciliation {
-  padding: 3rem 2rem;
-}
-
-@media (min-width: 800px) {
-  #conciliation {
-    padding: 5rem;
   }
 }
 
