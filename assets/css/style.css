@@ -129,7 +129,7 @@ h2 {
 }
 
 h3 {
-  font-size: var(--s-medium-large);
+  font-size: var(--s-large);
 }
 
 body {
@@ -273,6 +273,7 @@ ul > li + li {
 .about ul {
   list-style: none;
   padding-left: 0;
+  margin-block: var(--s-large);
 }
 
 .mission > h3 {
@@ -287,7 +288,7 @@ ul > li + li {
     color: var(--neutral-darkest);
     max-width: 1650px;
     margin-inline: auto;
-    margin-block: var(--s-medium);
+    margin-block: var(--s-large);
   }
 
   .mission {
@@ -316,7 +317,6 @@ ul > li + li {
 }
 
 .conciliation h3 {
-  font-size: var(--s-large);
   margin-bottom: var(--s-medium);
 }
 
@@ -332,40 +332,59 @@ ul > li + li {
 
 /* --- Services section --- */
 
-.services {
-  background-color: white;
+.services > * {
   text-align: center;
+  margin-inline: auto;
+  margin-bottom: var(--s-small);
+}
+
+.services-container {
+  margin-block: var(--s-medium);
+  margin-inline: auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   gap: 1.5rem;
 }
 
 .service {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.service-text {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-medium);
+  padding: var(--s-medium);
   max-width: 50ch;
-  padding: 0.5em;
-  padding-top: 1em;
+  text-align: center;
 }
 
-.service h3 {
-  margin-top: 1.1rem;
+.service-text > .btn {
+  align-self: center;
 }
 
-.service img {
-  margin-inline: auto;
-  height: 48px;
-  fill: var(--primary-dark);
+.service > .image-container {
+  max-width: 50ch;
+  align-self: center;
+}
+
+@media (min-width: 800px) {
+  .service-text {
+    text-align: left;
+    justify-content: center;
+  }
 }
 
 @media (min-width: 1000px) {
-  .services {
+  .service {
     flex-direction: row;
-    align-items: flex-start;
   }
 
-  .service img {
-    height: 56px;
+  .service-text > .btn {
+    align-self: flex-start;
   }
 }
 
