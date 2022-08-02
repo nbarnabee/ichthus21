@@ -226,9 +226,9 @@ ul > li + li {
       to bottom,
       rgba(0, 0, 0, 0) 0%,
       rgba(0, 0, 0, 0.3) 59%,
-      rgba(0, 0, 0, 0.75) 100%
+      rgba(0, 0, 0, 0.65) 100%
     ),
-    url("../images/header_full.JPG");
+    url("../images/patrick-robert-doyle-j6CsdJ7LIcc-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
