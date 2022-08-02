@@ -146,6 +146,10 @@ small {
 
 /* -- General component styling -- */
 
+.inline-link {
+  text-decoration: underline;
+}
+
 /*  Buttons and button-like objects */
 
 .btn {
@@ -242,6 +246,7 @@ small {
 /* --- Subsection tile styling --- */
 
 .services {
+  background-color: white;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -251,12 +256,9 @@ small {
 }
 
 .service {
-  background-color: white;
   max-width: 50ch;
   padding: 0.5em;
   padding-top: 1em;
-  box-shadow: var(--shadow);
-  border-radius: 20px;
 }
 
 .service h3 {
@@ -319,7 +321,7 @@ small {
 
 /* ----- Philosophy --- */
 
-.philosophy {
+.conciliation {
   color: white;
   background-image: linear-gradient(
       to bottom,
@@ -333,16 +335,17 @@ small {
   background-position: center;
 }
 
-#philosophy {
+.conciliation h3 {
+  font-size: var(--s-medium-large);
+  margin-bottom: var(--s-small);
+}
+
+#conciliation {
   padding: 3rem 2rem;
 }
 
-.philosophy h2 {
-  margin-bottom: 0.75em;
-}
-
 @media (min-width: 800px) {
-  #philosophy {
+  #conciliation {
     padding: 5rem;
   }
 }
