@@ -550,6 +550,7 @@ nav {
 .contact {
   display: flex;
   flex-direction: column;
+  max-width: 1000px;
 }
 
 .contact form {
@@ -580,7 +581,7 @@ textarea {
   margin-top: var(--s-medium);
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   .contact {
     flex-direction: row;
     margin-inline: auto;
