@@ -220,15 +220,36 @@ small {
   }
 }
 
+/* --- Main image --- */
+
+/* .main-img-wrapper {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.3) 59%,
+      rgba(0, 0, 0, 0.65) 100%
+    ),
+    url("../images/header_full.JPG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+} */
+
 /* -- Nav bar -- */
 
 .nav-header {
-  position: fixed;
+  position: sticky;
   top: 0;
-  left: 0;
-  right: 0;
+  /* left: 0;
+  right: 0; */
+  max-width: 1800px;
+  margin-inline: auto;
   background: transparent;
   transition: 0.2s;
+  background: var(--neutral-main);
+  transition: 0.2s;
+  box-shadow: var(--shadow);
+  opacity: 0.95;
 }
 
 nav {
@@ -242,7 +263,7 @@ nav {
   background: var(--neutral-main);
   transition: 0.2s;
   box-shadow: var(--shadow);
-  opacity: 0.9;
+  opacity: 0.95;
 }
 
 .lang-list {
@@ -303,6 +324,7 @@ nav {
       ),
       url("../images/patrick-robert-doyle-j6CsdJ7LIcc-unsplash.jpg");
   }
+
   .hero p {
     font-size: var(--s-medium);
     max-width: 50ch;
@@ -466,7 +488,7 @@ nav {
   background-color: white;
 }
 
-.raymond_container {
+.raymond-container {
   margin-inline: auto;
   display: flex;
   flex-direction: column;
@@ -475,11 +497,11 @@ nav {
   border-radius: 20px;
 }
 
-.raymond_image {
+.raymond-image {
   height: 250px;
 }
 
-.raymond_text h2 {
+.raymond-text h2 {
   text-align: center;
   margin-bottom: 0.25em;
   position: relative;
@@ -487,12 +509,12 @@ nav {
 }
 
 @media (min-width: 1200px) {
-  .raymond_container {
+  .raymond-container {
     flex-direction: row;
     gap: 2rem;
   }
 
-  .raymond_image {
+  .raymond-image {
     height: 300px;
   }
 }
@@ -534,13 +556,14 @@ nav {
 /* ------- Contact ------- */
 
 .contact {
-  max-width: 1000px;
-  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .contact form {
   display: flex;
   flex-direction: column;
+  margin-top: var(--s-medium-large);
 }
 
 .contact label {
@@ -562,38 +585,18 @@ textarea {
 .contact button {
   align-self: center;
   max-width: 120px;
+  margin-top: var(--s-medium);
 }
 
-/* 
 @media (min-width: 800px) {
   .contact {
-    display: grid;
-    grid-template-columns: 40ch 1fr;
-    grid-gap: 1em;
-    max-width: 1000px;
+    flex-direction: row;
     margin-inline: auto;
     padding-bottom: 20px;
+    gap: var(--s-xxl);
   }
 
-  .section__title--contact {
-    grid-area: title;
-  }
-
-  .section__title--contact::after {
-    height: 15px;
-  }
-
-  .contact__text {
-    grid-area: text;
-  }
-
-  .contact__form {
-    grid-area: form;
-  }
-
-  .contact .social-list {
-    grid-area: socials;
-    margin-block: 0;
+  .contact form {
+    margin-top: var(--s-small);
   }
 }
- */
