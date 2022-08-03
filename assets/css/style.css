@@ -283,7 +283,7 @@ nav {
 
 .lang-active {
   font-weight: bold;
-  border-bottom: 2px solid var(--neutral-lighter);
+  /* border-bottom: 2px solid var(--neutral-lighter); */
   transition: 0.3s;
 }
 
