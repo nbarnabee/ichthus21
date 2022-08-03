@@ -222,7 +222,8 @@ small {
 
 /* --- Main image --- */
 
-/* .main-img-wrapper {
+.main-image-wrapper {
+  color: white;
   background-image: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0) 0%,
@@ -233,7 +234,7 @@ small {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-} */
+}
 
 /* -- Nav bar -- */
 
@@ -281,20 +282,6 @@ nav {
 }
 
 /*  -- Hero section -- */
-
-.main-image-wrapper {
-  color: white;
-  background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0) 0%,
-      rgba(0, 0, 0, 0.3) 59%,
-      rgba(0, 0, 0, 0.65) 100%
-    ),
-    url("../images/header_full.JPG");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
 
 .hero {
   display: flex;
