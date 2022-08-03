@@ -92,6 +92,10 @@ body {
   outline-offset: 3px;
 }
 
+.focus-light:focus {
+  outline-color: var(--neutral-lightest);
+}
+
 p,
 q {
   max-width: 70ch;
@@ -159,10 +163,6 @@ small {
   text-decoration: underline;
 }
 
-ul > li + li {
-  margin-top: var(--s-small);
-}
-
 /*  Buttons and button-like objects */
 
 .btn {
@@ -209,6 +209,7 @@ ul > li + li {
 
 /*----- Functional classes ---- */
 
+.hidden,
 .hidden-small-screen {
   display: none;
 }
@@ -222,27 +223,44 @@ ul > li + li {
 /* -- Nav bar -- */
 
 .nav-header {
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   background: transparent;
   transition: 0.2s;
+}
+
+nav {
   display: flex;
-  flex-direction: flex-end;
+  flex-direction: row-reverse;
+  padding-block: var(--s-xs);
+  padding-inline: var(--s-small);
 }
 
 .nav-active {
   background: var(--neutral-main);
   transition: 0.2s;
+  box-shadow: var(--shadow);
+  opacity: 0.9;
 }
 
 .lang-list {
   display: flex;
+  gap: 10px;
+  font-size: var(--s-normal);
+  color: var(--neutral-lightest);
+}
+
+.lang-list a {
+  padding-inline: 4px;
+  transition: 0.2s;
 }
 
 .lang-active {
   font-weight: bold;
+  border-bottom: 2px solid var(--neutral-lighter);
+  transition: 0.2s;
 }
 
 /*  -- Hero section -- */
@@ -306,6 +324,10 @@ ul > li + li {
   list-style: none;
   padding-left: 0;
   margin-block: var(--s-large);
+}
+
+.about ul > li + li {
+  margin-top: var(--s-small);
 }
 
 .about h2,
