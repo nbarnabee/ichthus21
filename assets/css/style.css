@@ -265,7 +265,7 @@ nav {
 
 .lang-list {
   display: flex;
-  gap: 10px;
+  gap: 7px;
   font-size: var(--s-normal);
   color: var(--neutral-lightest);
 }
@@ -275,10 +275,16 @@ nav {
   transition: 0.2s;
 }
 
+.lang-list li:hover {
+  transform: scale(1.2);
+  font-weight: bold;
+  transition: 0.3s;
+}
+
 .lang-active {
   font-weight: bold;
   border-bottom: 2px solid var(--neutral-lighter);
-  transition: 0.2s;
+  transition: 0.3s;
 }
 
 /*  -- Hero section -- */
