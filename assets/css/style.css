@@ -276,18 +276,19 @@ ul > li + li {
   margin-block: var(--s-medium-large);
 }
 
-/* .mission {
-  max-width: max(500px, 90%);
-} */
-
 .about ul {
   list-style: none;
   padding-left: 0;
   margin-block: var(--s-large);
 }
 
+.about h2,
 .mission > h3 {
   text-align: center;
+}
+
+.mission.container-medium {
+  padding-top: 0;
 }
 
 @media (min-width: 1000px) {
@@ -305,6 +306,11 @@ ul > li + li {
     max-width: 580px;
   }
 
+  .mission.container-medium {
+    padding-top: var(--s-medium);
+  }
+
+  .about h2,
   .mission > h3 {
     text-align: left;
   }
@@ -346,6 +352,14 @@ ul > li + li {
   text-align: center;
   margin-inline: auto;
   margin-bottom: var(--s-small);
+}
+
+.services > h2 {
+  font-size: var(--s-large);
+}
+
+.services > p {
+  color: var(--neutral-main);
 }
 
 .services-container {
