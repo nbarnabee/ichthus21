@@ -247,6 +247,7 @@ small {
   top: 0;
   left: 0;
   right: 0;
+  height: 35px;
   max-width: 1800px;
   margin-inline: auto;
   background: transparent;
@@ -289,6 +290,40 @@ nav {
   font-weight: bold;
   /* border-bottom: 2px solid var(--neutral-lighter); */
   transition: 0.3s;
+}
+
+@media (min-width: 800px) {
+  .nav-header {
+    height: 50px;
+  }
+}
+
+/* --- Pop-in menu -- */
+
+.pop-in-menu {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--neutral-lightest);
+  color: var(--neutral-dark);
+  position: absolute;
+  top: 35px;
+  right: 0;
+  transform: translateX(100%);
+  transition: 0.3s;
+}
+
+.link-list > li {
+  font-size: var(--s-normal);
+}
+
+.navmenu-list {
+  color: inherit;
+}
+
+@media (min-width: 800px) {
+  .pop-in-menu {
+    top: 50px;
+  }
 }
 
 /*  -- Hero section -- */
@@ -606,4 +641,12 @@ footer {
   position: relative;
   bottom: 0;
   max-width: 1800px;
+  padding-block: 5px;
+  line-height: 0.8;
+}
+
+@media (min-width: 800) {
+  footer {
+    padding-block: 10px;
+  }
 }
