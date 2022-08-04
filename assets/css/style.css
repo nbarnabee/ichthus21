@@ -105,6 +105,10 @@ section {
   padding: 3rem 0.5rem;
 }
 
+a[target="_blank"] {
+  text-decoration: underline;
+}
+
 @media (min-width: 800px) {
   section {
     padding-inline: 3rem;
@@ -592,4 +596,14 @@ textarea {
   .contact form {
     margin-top: var(--s-small);
   }
+}
+
+/* --- Footer --- */
+footer {
+  background-color: var(--neutral-dark);
+  color: var(--neutral-lightest);
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  max-width: 1800px;
 }
