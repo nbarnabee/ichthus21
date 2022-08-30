@@ -281,6 +281,10 @@ nav {
   color: var(--neutral-lightest);
 }
 
+.lang-list-dark {
+  color: var(--neutral-darkest);
+}
+
 .lang-list a {
   padding-inline: 4px;
   transition: 0.2s;
