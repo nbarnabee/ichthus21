@@ -205,6 +205,14 @@ small {
   transition: 0.3s;
 }
 
+.btn-primary:hover {
+  background: var(--neutral-main);
+}
+
+.btn-dark:hover {
+  background: var(--neutral-dark);
+}
+
 .btn-group {
   display: flex;
   margin-block: 1rem;
@@ -530,6 +538,7 @@ nav {
 
 .raymond-image {
   height: 250px;
+  margin-bottom: var(--s-small);
 }
 
 .raymond-text h2 {
@@ -547,6 +556,8 @@ nav {
 
   .raymond-image {
     height: 300px;
+    margin-top: 86px;
+    margin-bottom: 0;
   }
 }
 
