@@ -209,12 +209,10 @@ small {
   background: var(--neutral-main);
 }
 
-.btn-dark:hover {
-  background: var(--neutral-dark);
-}
-
 .btn-group {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin-block: 1rem;
   gap: 1rem;
 }
@@ -353,6 +351,10 @@ nav {
   line-height: 1.3;
 }
 
+.hero .btn-group {
+  margin-inline: var(--s-xl);
+}
+
 @media (min-width: 800px) {
   .main-image-wrapper {
     background-image: linear-gradient(
@@ -377,7 +379,6 @@ nav {
 }
 
 .about .btn-group {
-  justify-content: center;
   margin-block: var(--s-medium-large);
 }
 
@@ -561,7 +562,7 @@ nav {
   }
 }
 
-/* --------- Testimonials/Swiper ---- */
+/* --------- Testimonials/Swiper (currently unused) ---- */
 
 .swiper {
   height: 300px;
