@@ -240,7 +240,7 @@ small {
       rgba(0, 0, 0, 0.3) 59%,
       rgba(0, 0, 0, 0.65) 100%
     ),
-    url("../images/header_full.JPG");
+    url("../images/index/header_full.JPG");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -367,7 +367,7 @@ nav {
         rgba(0, 0, 0, 0.3) 59%,
         rgba(0, 0, 0, 0.65) 100%
       ),
-      url("../images/patrick-robert-doyle-j6CsdJ7LIcc-unsplash.jpg");
+      url("../images/index/patrick-robert-doyle-j6CsdJ7LIcc-unsplash.jpg");
   }
 
   .hero p {
@@ -407,7 +407,7 @@ nav {
 
 @media (min-width: 1000px) {
   .about {
-    background-image: url("../images/sixteen-miles-out-bIwFwR2fSsA-unsplash.jpg");
+    background-image: url("../images/index/sixteen-miles-out-bIwFwR2fSsA-unsplash.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     color: var(--neutral-darkest);
@@ -440,7 +440,7 @@ nav {
       rgba(0, 0, 0, 0.6) 59%,
       rgba(0, 0, 0, 0.8) 100%
     ),
-    url("../images/hands_touching.jpg");
+    url("../images/index/hands_touching.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

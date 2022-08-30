@@ -1,0 +1,39 @@
+h1 {
+  font-size: var(--s-large);
+  margin-top: var(--s-xl);
+  padding-inline: var(--s-small);
+  text-shadow: none;
+  margin-inline: auto;
+  max-width: 1200px;
+  text-align: center;
+}
+
+h2 {
+  font-size: var(--s-medium);
+}
+
+.nav-active > nav > ul {
+  color: white;
+}
+
+.subpage .image-container {
+  max-width: 30ch;
+}
+
+.subpage .service {
+  background-color: white;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-block: var(--s-medium);
+}
+
+.subpage .service {
+  align-content: center;
+  justify-content: center;
+}
+
+@media (min-width: 800px) {
+  .image-right {
+    order: 2;
+  }
+}
