@@ -12,8 +12,17 @@ h2 {
   font-size: var(--s-medium);
 }
 
+.section-head-large {
+  font-size: var(--s-medium-large);
+  text-align: center;
+}
+
 .nav-active > nav > ul {
   color: white;
+}
+
+.subpage + section > .container-large {
+  padding-top: 0;
 }
 
 .subpage .image-container {
@@ -32,8 +41,30 @@ h2 {
   justify-content: center;
 }
 
+.container-sub {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-inline: auto;
+  padding-inline: var(--s-small);
+}
+
+.container-sub > .image-container {
+  margin-left: var(--s-medium);
+  margin-right: var(--s-large);
+  margin-block: var(--s-xs);
+}
+
 @media (min-width: 800px) {
   .image-right {
     order: 2;
+    margin-right: var(--s-medium);
+  }
+
+  .container-sub {
+    flex-direction: row;
+    max-width: 1000px;
+    padding-inline: 0;
   }
 }
