@@ -36,9 +36,18 @@ h2 {
   padding-block: var(--s-medium);
 }
 
+.subpage .service.block-padded {
+  padding-block: var(--s-xl);
+  max-width: 1100px;
+}
+
 .subpage .service {
   align-content: center;
   justify-content: center;
+}
+
+.subpage p {
+  text-align: left;
 }
 
 .container-sub {
