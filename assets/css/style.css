@@ -109,6 +109,10 @@ a[target="_blank"] {
   text-decoration: underline;
 }
 
+a[target="_blank"]:not(.no-line) {
+  text-decoration: underline;
+}
+
 @media (min-width: 800px) {
   section {
     padding-inline: 3rem;
@@ -159,12 +163,6 @@ small {
 
 .text-medium {
   font-size: var(--s-medium);
-}
-
-/* -- General component styling -- */
-
-.inline-link {
-  text-decoration: underline;
 }
 
 /*  Buttons and button-like objects */
@@ -488,6 +486,7 @@ nav {
   display: flex;
   flex-direction: column;
   align-self: center;
+  max-width: 1200px;
 }
 
 .service-text {
@@ -505,7 +504,7 @@ nav {
 }
 
 .service > .image-container {
-  max-width: 50ch;
+  max-width: 35ch;
   align-self: center;
 }
 

@@ -31,7 +31,7 @@ h2 {
 
 .subpage .service {
   background-color: white;
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin-inline: auto;
   padding-block: var(--s-medium);
 }
