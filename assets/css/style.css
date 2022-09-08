@@ -109,10 +109,6 @@ a[target="_blank"] {
   text-decoration: underline;
 }
 
-a[target="_blank"]:not(.no-line) {
-  text-decoration: underline;
-}
-
 @media (min-width: 800px) {
   section {
     padding-inline: 3rem;
