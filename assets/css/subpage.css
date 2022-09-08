@@ -30,8 +30,6 @@ h2 {
 }
 
 .subpage .service {
-  background-color: white;
-  /* max-width: 1200px; */
   margin-inline: auto;
   padding-block: var(--s-medium);
 }
@@ -63,6 +61,10 @@ h2 {
   margin-left: var(--s-medium);
   margin-right: var(--s-large);
   margin-block: var(--s-xs);
+}
+
+.sub-image {
+  max-width: 35ch;
 }
 
 @media (min-width: 800px) {
