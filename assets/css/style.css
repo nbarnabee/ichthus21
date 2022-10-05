@@ -548,6 +548,8 @@ nav {
   padding-block: 10px;
 }
 
+/* --- with such a lot of text now, a row layout on a larger screen doesn't make sense
+
 @media (min-width: 1200px) {
   .raymond-container {
     flex-direction: row;
@@ -559,7 +561,7 @@ nav {
     margin-top: 86px;
     margin-bottom: 0;
   }
-}
+} */
 
 /* --------- Testimonials/Swiper (currently unused) ---- */
 
