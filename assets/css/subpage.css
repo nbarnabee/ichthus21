@@ -69,10 +69,18 @@ h2 {
   align-self: center;
 }
 
+.tall-image {
+  max-height: 250px;
+}
+
 @media (min-width: 800px) {
   .image-right {
     order: 2;
     margin-right: var(--s-medium);
+  }
+
+  .tall-image {
+    max-height: 500px;
   }
 
   .container-sub {
