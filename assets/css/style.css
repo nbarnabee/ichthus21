@@ -3,7 +3,6 @@
 /* ----- Root variables --------- */
 
 :root {
-  /* See Palette 9 in Refactoring UI */
   --primary-main: hsl(199, 84%, 55%);
   --primary-lightest: hsl(195, 100%, 95%);
   --primary-light: hsl(195, 97%, 75%);
