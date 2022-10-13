@@ -66,6 +66,7 @@ h2 {
 .sub-image {
   max-width: 35ch;
   padding: var(--s-small);
+  align-self: center;
 }
 
 @media (min-width: 800px) {
