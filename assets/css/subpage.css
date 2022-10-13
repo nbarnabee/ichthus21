@@ -65,6 +65,7 @@ h2 {
 
 .sub-image {
   max-width: 35ch;
+  padding: var(--s-small);
 }
 
 @media (min-width: 800px) {
