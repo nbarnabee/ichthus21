@@ -221,6 +221,10 @@ small {
   background-color: white;
 }
 
+.scroll-buffer {
+  scroll-margin-top: var(--s-xxl);
+}
+
 @media (min-width: 800px) {
   .hidden-small-screen {
     display: block;
