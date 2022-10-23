@@ -406,11 +406,20 @@ nav {
   padding-top: 0;
 }
 
+.mission-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.mission-row.image-container {
+  order: 0;
+}
+
 @media (min-width: 1000px) {
   .about {
-    background-image: url("../images/index/sixteen-miles-out-bIwFwR2fSsA-unsplash.jpg");
+    /* background-image: url("../images/index/sixteen-miles-out-bIwFwR2fSsA-unsplash.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
     color: var(--neutral-darkest);
     max-width: 1400px;
     margin-inline: auto;
@@ -423,6 +432,14 @@ nav {
 
   .mission.container-medium {
     padding-top: var(--s-medium);
+  }
+
+  .mission-row {
+    flex-direction: row;
+  }
+
+  .mission-row.image-container {
+    order: 2;
   }
 
   .about h2,
