@@ -589,20 +589,11 @@ nav img {
   padding-block: 10px;
 }
 
-/* --- with such a lot of text now, a row layout on a larger screen doesn't make sense
-
-@media (min-width: 1200px) {
-  .raymond-container {
-    flex-direction: row;
-    gap: 2rem;
-  }
-
+@media (min-width: 800px) {
   .raymond-image {
-    height: 300px;
-    margin-top: 86px;
-    margin-bottom: 0;
+    height: 350px;
   }
-} */
+}
 
 /* --------- Testimonials/Swiper (currently unused) ---- */
 
