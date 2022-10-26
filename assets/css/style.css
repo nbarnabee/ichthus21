@@ -438,8 +438,9 @@ nav {
     flex-direction: row;
   }
 
-  .mission-row.image-container {
-    order: 2;
+  .mission-row > .image-container {
+    width: 50%;
+    min-width: 400px;
   }
 
   .about h2,
