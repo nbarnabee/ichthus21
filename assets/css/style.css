@@ -247,6 +247,24 @@ small {
   background-position: center;
 }
 
+.main-logo {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 9%;
+  left: 35%;
+}
+
+@media (min-width: 500px) {
+  .main-logo {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: 2%;
+    left: 2%;
+  }
+}
+
 /* -- Nav bar -- */
 
 .nav-header {
@@ -353,7 +371,7 @@ nav img {
   margin-inline: var(--s-xl);
 }
 
-@media (min-width: 800px) {
+@media (min-width: 500px) {
   .main-image-wrapper {
     background-image: linear-gradient(
         to bottom,
