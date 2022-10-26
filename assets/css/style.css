@@ -650,6 +650,12 @@ nav > img {
   max-width: 1100px;
 }
 
+.contact-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 .contact form {
   display: flex;
   flex-direction: column;
