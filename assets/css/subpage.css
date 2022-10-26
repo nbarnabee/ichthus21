@@ -12,13 +12,13 @@ h2 {
   font-size: var(--s-medium);
 }
 
+.lang-list-sub {
+  color: inherit;
+}
+
 .section-head-large {
   font-size: var(--s-medium-large);
   text-align: center;
-}
-
-.nav-active > nav > ul {
-  color: white;
 }
 
 .subpage + section > .container-large {

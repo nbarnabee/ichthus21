@@ -259,17 +259,24 @@ small {
   margin-inline: auto;
   background: transparent;
   transition: 0.2s;
+  height: 45px;
 }
 
 nav {
   display: flex;
-  flex-direction: row-reverse;
-  padding-block: var(--s-xs);
-  padding-inline: var(--s-small);
+  justify-content: space-between;
+  padding-inline: var(--s-xs);
+}
+
+nav > img {
+  align-self: center;
+  margin-block: 2px;
+  height: 40px;
+  width: 40px;
 }
 
 .nav-active {
-  background: var(--neutral-main);
+  background: var(--neutral-lighter);
   transition: 0.2s;
   box-shadow: var(--shadow);
   opacity: 0.95;
@@ -280,6 +287,7 @@ nav {
   gap: 7px;
   font-size: var(--s-normal);
   color: var(--neutral-lightest);
+  align-items: center;
 }
 
 .lang-list-dark {
@@ -299,13 +307,21 @@ nav {
 
 .lang-active {
   font-weight: bold;
-  /* border-bottom: 2px solid var(--neutral-lighter); */
   transition: 0.3s;
+}
+
+.lang-active .lang-list {
+  color: var(--neutral-dark);
 }
 
 @media (min-width: 800px) {
   .nav-header {
+    height: 55px;
+  }
+
+  nav > img {
     height: 50px;
+    width: 50px;
   }
 }
 
