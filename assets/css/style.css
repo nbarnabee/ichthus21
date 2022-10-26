@@ -268,7 +268,7 @@ nav {
   padding-inline: var(--s-xs);
 }
 
-nav > img {
+nav img {
   align-self: center;
   margin-block: 2px;
   height: 40px;
@@ -319,7 +319,7 @@ nav > img {
     height: 55px;
   }
 
-  nav > img {
+  nav img {
     height: 50px;
     width: 50px;
   }
