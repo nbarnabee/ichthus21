@@ -174,7 +174,7 @@ small {
   cursor: pointer;
   transition: 0.2s;
   font-family: var(--ff-header);
-  font-size: var(--s-normal);
+  font-size: var(--s-small);
 }
 
 .btn-outline {
