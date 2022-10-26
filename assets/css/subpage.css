@@ -69,31 +69,27 @@ h2 {
   align-self: center;
 }
 
-.img-sub-tallest {
-  max-height: 250px;
-}
-
-.img-sub-small {
-  max-width: 370px;
-}
-
-.img-sub-tall {
-  max-height: 480px;
-}
-
-@media (min-width: 800px) {
+@media (min-width: 1050px) {
   .image-right {
     order: 2;
     margin-right: var(--s-medium);
-  }
-
-  .img-sub-tallest {
-    max-height: 500px;
   }
 
   .container-sub {
     flex-direction: row;
     max-width: 1000px;
     padding-inline: 0;
+  }
+
+  .img-sub-small {
+    max-width: 370px;
+  }
+
+  .img-sub-tall {
+    max-height: 480px;
+  }
+
+  .img-sub-tallest {
+    max-height: 630px;
   }
 }

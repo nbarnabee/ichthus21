@@ -411,15 +411,16 @@ nav {
   flex-direction: column;
 }
 
-.mission-row.image-container {
-  order: 0;
+.mission-img {
+  max-width: 652px;
+}
+
+.mission-row > .image-container {
+  align-self: center;
 }
 
 @media (min-width: 1000px) {
   .about {
-    /* background-image: url("../images/index/sixteen-miles-out-bIwFwR2fSsA-unsplash.jpg");
-    background-repeat: no-repeat;
-    background-size: cover; */
     color: var(--neutral-darkest);
     max-width: 1400px;
     margin-inline: auto;
@@ -441,6 +442,7 @@ nav {
   .mission-row > .image-container {
     width: 50%;
     min-width: 400px;
+    align-self: inherit;
   }
 
   .about h2,
@@ -515,8 +517,7 @@ nav {
   flex-direction: column;
   gap: var(--s-medium);
   padding: var(--s-medium);
-  max-width: 50ch;
-  text-align: center;
+  align-self: center;
 }
 
 .service-text > .btn {
@@ -529,6 +530,10 @@ nav {
   padding: var(--s-medium);
 }
 
+.service-img {
+  max-width: 385px;
+}
+
 @media (min-width: 800px) {
   .service-text {
     text-align: left;
@@ -539,6 +544,10 @@ nav {
 @media (min-width: 1000px) {
   .service {
     flex-direction: row;
+  }
+
+  .service-text {
+    max-width: 50ch;
   }
 
   .service-text > .btn {
