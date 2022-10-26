@@ -268,6 +268,11 @@ nav {
   padding-inline: var(--s-xs);
 }
 
+.main-image-wrapper nav {
+  padding-block: var(--s-xs);
+  justify-content: flex-end;
+}
+
 nav img {
   align-self: center;
   margin-block: 2px;
@@ -322,34 +327,6 @@ nav img {
   nav img {
     height: 50px;
     width: 50px;
-  }
-}
-
-/* --- Pop-in menu -- */
-
-.pop-in-menu {
-  display: flex;
-  flex-direction: column;
-  background-color: var(--neutral-lightest);
-  color: var(--neutral-dark);
-  position: absolute;
-  top: 35px;
-  right: 0;
-  transform: translateX(100%);
-  transition: 0.3s;
-}
-
-.link-list > li {
-  font-size: var(--s-normal);
-}
-
-.navmenu-list {
-  color: inherit;
-}
-
-@media (min-width: 800px) {
-  .pop-in-menu {
-    top: 50px;
   }
 }
 
