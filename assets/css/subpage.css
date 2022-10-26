@@ -69,8 +69,16 @@ h2 {
   align-self: center;
 }
 
-.tall-image {
+.img-sub-tallest {
   max-height: 250px;
+}
+
+.img-sub-small {
+  max-width: 370px;
+}
+
+.img-sub-tall {
+  max-height: 480px;
 }
 
 @media (min-width: 800px) {
@@ -79,7 +87,7 @@ h2 {
     margin-right: var(--s-medium);
   }
 
-  .tall-image {
+  .img-sub-tallest {
     max-height: 500px;
   }
 
