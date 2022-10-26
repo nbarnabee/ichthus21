@@ -411,10 +411,6 @@ nav {
   flex-direction: column;
 }
 
-.mission-img {
-  max-width: 652px;
-}
-
 .mission-row > .image-container {
   align-self: center;
 }
@@ -429,6 +425,10 @@ nav {
 
   .mission {
     max-width: 580px;
+  }
+
+  .mission-img {
+    max-width: 652px;
   }
 
   .mission.container-medium {
@@ -530,10 +530,6 @@ nav {
   padding: var(--s-medium);
 }
 
-.service-img {
-  max-width: 385px;
-}
-
 @media (min-width: 800px) {
   .service-text {
     text-align: left;
@@ -544,6 +540,10 @@ nav {
 @media (min-width: 1000px) {
   .service {
     flex-direction: row;
+  }
+
+  .service-img {
+    max-width: 385px;
   }
 
   .service-text {
