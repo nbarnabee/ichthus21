@@ -310,7 +310,7 @@ nav > img {
   transition: 0.3s;
 }
 
-.lang-active .lang-list {
+.nav-active .lang-list {
   color: var(--neutral-dark);
 }
 
