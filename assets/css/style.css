@@ -568,13 +568,13 @@ nav img {
 
 /* ---- Raymond ----- */
 
-.raymond-container {
+.raymond-container,
+.support-container {
   margin-inline: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 20px;
 }
 
 .raymond-image {
@@ -593,6 +593,12 @@ nav img {
   .raymond-image {
     height: 350px;
   }
+}
+
+/* -------  Support ---------- */
+
+.support {
+  padding-bottom: 0;
 }
 
 /* --------- Testimonials/Swiper (currently unused) ---- */
