@@ -1,6 +1,5 @@
 Project files for Raymond's website
 
-To Do Before Deployment:
+To Do:
 
 Set up self-hosting for the Google fonts
-Add logo
