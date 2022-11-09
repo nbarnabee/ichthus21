@@ -322,7 +322,7 @@ nav img {
   transition: 0.2s;
 }
 
-.lang-list li:hover {
+.lang-list li:hover:not(.lang-active) {
   transform: scale(1.2);
   font-weight: bold;
   transition: 0.3s;
@@ -331,6 +331,7 @@ nav img {
 .lang-active {
   font-weight: bold;
   transition: 0.3s;
+  cursor: default;
 }
 
 .nav-active .lang-list {
