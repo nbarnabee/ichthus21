@@ -295,7 +295,7 @@ small {
 nav {
   display: flex;
   justify-content: space-between;
-  padding-inline: var(--s-xs);
+  padding: var(--s-xs);
 }
 
 .main-image-wrapper nav {
@@ -306,8 +306,8 @@ nav {
 nav img {
   align-self: center;
   margin-block: 2px;
-  height: 40px;
-  width: 40px;
+  height: 24px;
+  width: 24px;
 }
 
 .nav-active {
@@ -356,8 +356,8 @@ nav img {
   }
 
   nav img {
-    height: 50px;
-    width: 50px;
+    height: 32px;
+    width: 32px;
   }
 }
 
