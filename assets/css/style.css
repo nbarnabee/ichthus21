@@ -183,14 +183,22 @@ small {
   margin-block: 0.5rem;
 }
 
+.btn-primary,
+.btn-dark,
+.btn-blue {
+  color: var(--neutral-lightest);
+}
+
 .btn-primary {
   background: var(--neutral-dark);
-  color: var(--neutral-lightest);
 }
 
 .btn-dark {
   background: var(--neutral-darkest);
-  color: var(--neutral-lightest);
+}
+
+.btn-blue {
+  background: var(--primary-dark);
 }
 
 .btn:hover {
@@ -200,6 +208,10 @@ small {
 
 .btn-primary:hover {
   background: var(--neutral-main);
+}
+
+.btn-blue:hover {
+  background: var(--primary-main);
 }
 
 .btn-group {
