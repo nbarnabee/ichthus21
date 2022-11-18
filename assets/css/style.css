@@ -489,6 +489,17 @@ nav img {
   }
 }
 
+@media (max-width: 380px) {
+  .hero .btn-group {
+    row-gap: 1rem;
+    column-gap: 0.5rem;
+  }
+
+  .hero .btn {
+    padding-inline: 1rem;
+  }
+}
+
 /* -- About section -- */
 
 .about > div:first-of-type {
