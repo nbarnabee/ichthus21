@@ -785,17 +785,29 @@ nav img {
   margin-bottom: 3px;
 }
 
-.contact input {
+.contact input:not(type=checkbox) {
   height: var(--s-xl);
 }
 
-.contact input,
+.contact input:not(type=checkbox),
 textarea {
   margin-bottom: 1rem;
 }
 
-.contact button {
+.contact input[type="checkbox"] {
+  margin-inline: 5px;
+}
+
+.contact button,
+label {
   align-self: center;
+}
+
+.contact label {
+  margin-top: var(--s-small);
+}
+
+.contact button {
   max-width: 120px;
   margin-top: var(--s-medium);
 }

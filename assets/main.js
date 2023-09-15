@@ -4,3 +4,11 @@ window.onscroll = () => {
   if (window.scrollY > 150) navBar.classList.add("nav-active");
   else navBar.classList.remove("nav-active");
 };
+
+const botBlocker = document.getElementById("bot-blocker");
+const submitButton = document.getElementById("submit-button");
+
+botBlocker.addEventListener("click", () => {
+  if (botBlocker.checked) submitButton.setAttribute("disabled", false);
+  else submitButton.setAttribute("disabled", true);
+});
