@@ -817,6 +817,11 @@ label {
   margin-top: var(--s-medium);
 }
 
+.contact .bot-blocker-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
 @media (min-width: 1000px) {
   .contact {
     flex-direction: row;
