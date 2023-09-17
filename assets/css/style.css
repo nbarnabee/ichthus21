@@ -727,7 +727,7 @@ nav img {
 
 /* --------- Testimonials/Swiper (currently unused) ---- */
 
-.swiper {
+/* .swiper {
   height: 300px;
 }
 
@@ -756,7 +756,7 @@ nav img {
 .swiper-button-next:focus,
 .swiper-button-prev:focus {
   outline: 2px solid var(--primary-light) !important;
-}
+} */
 
 /* ------- Contact ------- */
 
