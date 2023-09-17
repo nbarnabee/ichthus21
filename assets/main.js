@@ -9,6 +9,6 @@ const botBlocker = document.getElementById("bot-blocker");
 const submitButton = document.getElementById("submit-button");
 
 botBlocker.addEventListener("click", () => {
-  if (botBlocker.checked) submitButton.setAttribute("disabled", false);
-  else submitButton.setAttribute("disabled", true);
+  if (botBlocker.checked) submitButton.disabled = false;
+  else submitButton.disabled = true;
 });

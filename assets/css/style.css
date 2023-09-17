@@ -289,7 +289,7 @@ small {
   background: var(--primary-dark);
 }
 
-.btn:hover {
+.btn:hover:not(:disabled) {
   transform: scale(1.1);
   transition: 0.3s;
 }
@@ -300,6 +300,11 @@ small {
 
 .btn-blue:hover {
   background: var(--primary-main);
+}
+
+.btn:disabled {
+  background: var(--neutral-light);
+  cursor: not-allowed;
 }
 
 .btn-group {
@@ -795,7 +800,7 @@ textarea {
 }
 
 .contact input[type="checkbox"] {
-  margin-inline: 5px;
+  margin-inline: 8px;
 }
 
 .contact button,
