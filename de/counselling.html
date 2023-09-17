@@ -127,18 +127,23 @@
               contact@ichthus21.eu<br>
             </address>
           </div>
-          <form action="https://api.staticforms.xyz/submit" method="post">
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name">
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email">
-            <input type="hidden" name="accessKey" value="8c1ebded-b5a9-47e7-bfc2-4ef0acda300d">
-            <input type="hidden" name="redirectTo" value="https://www.ichthus21.eu/en/success.html">
-            <input type="text" name="honeypot" style="display: none;">
-            <label for="message">Nachricht</label>
-            <textarea name="message" id="message" cols="25" rows="6"></textarea>
-            <button type="submit" class="btn btn-dark">Senden</button>
-          </form>
+          <section>
+            <form action="https://api.staticforms.xyz/submit" method="post">
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email">
+              <input type="hidden" name="accessKey" value="8c1ebded-b5a9-47e7-bfc2-4ef0acda300d">
+              <input type="hidden" name="redirectTo" value="https://www.ichthus21.eu/en/success.html">
+              <input type="text" name="honeypot" style="display: none;">
+              <label for="message">Nachricht</label>
+              <textarea name="message" id="message" cols="25" rows="6"></textarea>
+              <button type="submit" class="btn btn-dark" id="submit-button" disabled>Senden</button>
+            </form>
+            <div class="bot-blocker-wrapper"><label for="bot-blocker"><input type="checkbox" id="bot-blocker">Ich bin
+                ein Mensch.</label></div>
+          </section>
+
         </div>
       </section>
     </main>
