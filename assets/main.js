@@ -1,7 +1,7 @@
-let navBar = document.querySelector(".nav-header");
-let phone = document.getElementById("obfus-phone");
-let emailAddress = document.getElementById("obfus-email");
-let formPlaceholder = document.getElementById("obfus-form");
+const navBar = document.querySelector(".nav-header");
+const phone = document.getElementById("obfus-phone");
+const emailAddress = document.getElementById("obfus-email");
+const formPlaceholder = document.getElementById("obfus-form");
 
 window.onscroll = () => {
   if (window.scrollY > 150) {
